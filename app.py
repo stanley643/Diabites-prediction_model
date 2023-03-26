@@ -39,7 +39,7 @@ def main():
     DiabetesPedigreeFunction = st.number_input('DiabetesPedigreeFunction')
     Age = st.number_input('Input your age')
     if button:
-        prediction = st.number_input('Input number of pregnancies')
+        prediction = predict_default(Pregnancies,Glucose,BloodPressure,SkinThickness,Isulin,BMI,DiabetesPedigreeFunction,Age)
         st.success('Return of 1 means YES and return of 0 means NO:{}'.format(prediction))
 
 if __name__ == '__main__':
